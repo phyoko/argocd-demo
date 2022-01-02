@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: nginx-ingress-deployment
   labels:
-    app: nginx
+    app: nginx-ingress
 spec:
   replicas: 3
   selector:
@@ -12,7 +12,7 @@ spec:
   template:
     metadata:
       labels:
-        app: nginx
+        app: nginx-ingress
     spec:
       containers:
       - name: nginx
