@@ -2,10 +2,8 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
  name: nginx-ingress
-annotations:
- kubernets.io/ingress.class: "nginx"
 spec:
-  ingressClassName: nginx
+  ingressClassName: nginx-ingress
   rules:
   - host: test.nginx.com
     http:
