@@ -10,5 +10,7 @@ spec:
       paths:
       - path: /
         backend:
-          serviceName: nginx-ingress-service
-          servicePort: 80
+          service:
+            name: nginx-ingress-service
+            port:
+             number: 80
