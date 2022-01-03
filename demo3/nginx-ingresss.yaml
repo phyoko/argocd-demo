@@ -9,7 +9,7 @@ spec:
       port:
         number: 80
   rules:
-  - host: nginx
+  - host: nginx.phyo.cloud
     http:
       paths:
       - path: /
