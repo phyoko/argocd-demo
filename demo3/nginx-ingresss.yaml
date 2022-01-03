@@ -3,7 +3,6 @@ kind: Ingress
 metadata:
  name: nginx-ingress
 spec:
-  ingressClassName: nginx-ingress
   defaultBackend:
     service:
       name: nginx-ingress-service
