@@ -8,14 +8,3 @@ spec:
       name: nginx-ingress-service
       port:
         number: 80
-  rules:
-  - host: nginx.phyo.cloud
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: nginx-ingress-service
-            port:
-             number: 80
